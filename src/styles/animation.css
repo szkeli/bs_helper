@@ -1,0 +1,86 @@
+
+.appear {
+  animation: appear 300ms forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.disappear {
+  animation: disappear 300ms forwards;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.appear-top {
+  animation: appear-top 300ms forwards;
+}
+
+@keyframes appear-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.disappear-top {
+  animation: disappear-top 300ms forwards;
+}
+
+@keyframes disappear-top {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.appear-bottom {
+  animation: appear-bottom 300ms forwards;
+}
+
+@keyframes appear-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.disappear-bottom {
+  animation: disappear-bottom 300ms forwards;
+}
+
+@keyframes disappear-bottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

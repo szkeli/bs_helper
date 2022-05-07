@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "standard",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": [
+        "standard-with-typescript",
+        "standard-jsx",
+        "standard-react",
+        "taro/react"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": "tsconfig.json"
+      },
+      "plugins": ["react", "@typescript-eslint", "simple-import-sort"],
+      "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "comma-dangle": ["error", "always-multiline"],
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/promise-function-async": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              ["^@?\\w"],
+              ["^"],
+              ["^(src)(/.*|$)"],
+              ["^\\u0000"],
+              ["^\\."]
+            ]
+          }
+        ],
+        "simple-import-sort/exports": "error"
+      }
+    }
+  ]
+}

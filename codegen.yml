@@ -1,0 +1,9 @@
+schema: ./src/types/schema.graphql
+documents: ./src/**/*.{ts,tsx}
+generates:
+  ./src/types/generated-types.ts:
+    plugins:
+      - typescript
+    hooks:
+      afterOneFileWrite:
+        - eslint --fix

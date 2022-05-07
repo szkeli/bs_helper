@@ -1,0 +1,11 @@
+.weui-slideview_icon .weui-slideview__btn__wrp:first-child {
+    padding: 0;
+}
+
+.weui-slideview_icon .weui-slideview__btn__wrp:last-child {
+    padding: 0;
+}
+
+.weui-slideview_icon .weui-slideview__btn__wrp {
+    margin-left: -18rpx;
+}
